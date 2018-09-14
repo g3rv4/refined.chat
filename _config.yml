@@ -1,0 +1,9 @@
+# Build settings
+markdown: kramdown
+kramdown:
+    smart_quotes: ["apos", "apos", "quot", "quot"]
+
+extlinks:
+  attributes: {rel: nofollow, target: _blank}
+  check_links: false
+  rel_exclude: ['g3rv4.com']
