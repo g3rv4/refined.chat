@@ -4,11 +4,12 @@ layout: default
 
 # Taut - a tool for Slack
 
-Taut is an [open source](https://github.com/g3rv4/Taut) browser extension that lets you personalize a bit how Slack works.
+Taut is an open source browser extension that lets you personalize a bit how Slack works.
 
 How to get it:
-* [chrome web store](https://chrome.google.com/webstore/detail/taut-a-tool-for-slack/mgicdolhkaeefgmbhlohfjoafacijbfh)
+* [Chrome](https://chrome.google.com/webstore/detail/taut-a-tool-for-slack/mgicdolhkaeefgmbhlohfjoafacijbfh)
 * [Firefox](https://addons.mozilla.org/en-US/firefox/addon/taut-a-tool-for-slack/)
+* [Opera](https://addons.opera.com/en/extensions/details/taut-a-tool-for-slack/)
 * You can get [its source code](https://github.com/g3rv4/Taut) and then run `npm install && npm run build`
 
 ## What does it do?
