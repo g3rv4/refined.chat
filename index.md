@@ -1,5 +1,6 @@
 ---
 layout: default
+description: "Use markdown links. Mute users. Mute bots. Unread messages on the title."
 ---
 
 # Taut - a tool for Slack
