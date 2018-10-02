@@ -7,5 +7,8 @@ kramdown:
 
 extlinks:
   attributes: {rel: nofollow, target: _blank}
-  check_links: false
+  check_links: false #local
+#prod:  check_links: true
   rel_exclude: ['g3rv4.com']
+
+exclude: ["assets/less"]

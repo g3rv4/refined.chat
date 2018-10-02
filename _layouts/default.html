@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Taut - a tool for Slack</title>
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-us">
+{% include head.html %}
 
-    <meta property="og:title" content="Taut - a tool for Slack" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}public/images/card.png" />
-    <meta property="og:image:width" content="1024" />
-    <meta property="og:image:height" content="512" />
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.meta_description }}{% endif %}" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="&#64;g3rv4">
-    <meta name="twitter:creator" content="&#64;g3rv4">
-    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}public/images/card.png" />
-  </head>
-  <body class="markdown-body">
-    {{content | extlinks:page}}
-  </body>
+<body>
+    {% include header.html %}
+
+    <div class="grid mx-auto w100 wmx12">
+        {% include navigation.html %}
+
+        <div class="grid--cell w90 md:w100">
+            <div id="content" class="grid jc-space-between ps-relative t64 py24 pl48 pr16 md:pl24 sm:pl16 sm:pr16">
+                <div class="grid--cell order-last w20 wmx2 pl24 sm:d-none">
+                    <aside class="ps-sticky t64 pt16">
+                        <h5 class="mb4 fw-bold tt-uppercase fs-fine fc-red-500 mnl1">Sections</h5>
+                        <ul class="list-reset grid gs8 gsy fd-column stacks-nav__secondary js-secondary-nav"></ul>
+                    </aside>
+                </div>
+                <div class="grid--cell w80 wmx8 sm:w100">
+                    {% if page.title %}
+                        <h1 class="stacks-h1">{{ page.title }}</h1>
+                    {% endif %}
+                    {% if page.description %}
+                        <p class="stacks-copy stacks-copy__lg">
+                            {{ page.description }}
+                        </p>
+                    {% endif %}
+                    {{ content | extlinks:page }}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

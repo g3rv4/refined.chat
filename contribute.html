@@ -1,0 +1,22 @@
+---
+layout: default
+title: Contribute
+description: This is open source and MIT licensed. Contributions are welcome!
+---
+
+<p class="stacks-copy">Contributions can take any shape or form, but they must adhere to the project's <a href="https://github.com/g3rv4/Taut/blob/master/CODE_OF_CONDUCT.md">code of conduct</a>. If that looks good to you, feel free to open issues, send PRs (although a PR beforehand could be useful).</p>
+
+<section class="stacks-section">
+    {% header h2 | Contributing to this site %}
+    <p class="stacks-copy">If you find a typo or something that doesn't make sense here, feel free to send a PR to <a href="https://github.com/g3rv4/taut.rocks">this site's repository</a>.</p>
+</section>
+
+<section class="stacks-section">
+    {% header h2 | Contributing to the extension %}
+    <p class="stacks-copy">PRs and issues are welcome on <a href="https://github.com/g3rv4/Taut">the project's repository</a>.</p>
+
+    {% header h3 | Understanding the plugins structure %}
+    <p class="stacks-copy">If you want to contribute with the extension, keep in mind it's plugin-based. All the features are plugins so that they can easily be disabled by the user. If a feature breaks (because Slack changed something on their end) a user should be able to disable that feature in particular and that should solve the issue.</p>
+    <p class="stacks-copy">The extension is written in TypeScript and the plugins can be found on the plugins folder. They can choose to observe DOM elements, intercept XHR and WS messages, and communicate with the extension.</p>
+    <p class="stacks-copy">The existing plugins should (hopefully) provide a guide on how you can implement your own... but feel free to open an issue and we can discuss if I should add some documentation.</p>
+</section>

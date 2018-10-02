@@ -1,0 +1,44 @@
+# URLs below should be exactly the same as real paths. Just follow examples…
+- title: Taut
+  url: /
+  sublinks:
+    - title: Download
+      subsublinks:
+        - title: Chrome
+          url: https://chrome.google.com/webstore/detail/taut-a-tool-for-slack/mgicdolhkaeefgmbhlohfjoafacijbfh
+          external: true
+        - title: Firefox
+          url: https://addons.mozilla.org/en-US/firefox/addon/taut-a-tool-for-slack/
+          external: true
+        - title: Opera
+          url: https://addons.opera.com/en/extensions/details/taut-a-tool-for-slack/
+          external: true
+        - title: Source Code
+          url: https://github.com/g3rv4/Taut
+          external: true
+    - title: Features
+      subsublinks:
+        - title: Mute users
+          url: mute-users
+        - title: Markdown links
+          url: markdown-links
+        - title: Hangout links
+          url: hangout-links
+        - title: Unread count
+          url: unread-count
+        - title: Reply to channel
+          url: reply-to-channel
+        - title: Disable previews
+          url: disable-previews
+        - title: Styling updates
+          url: styling-updates
+    - title: Security
+      subsublinks:
+        - title: Is this extension secure?
+          url: security
+    - title: Get in touch
+      subsublinks:
+        - title: Contribute!
+          url: contribute
+        - title: Report bugs
+          url: bugs

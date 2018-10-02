@@ -1,0 +1,28 @@
+---
+layout: default
+title: Hangout Links
+description: A quick and straightforward of starting hangouts.
+---
+
+<section class="stacks-section">
+    {% header h2 | Why would you want to start hangouts this way? %}
+    <p class="stacks-copy">The hangouts app doesn't work reliably for me. This is a quick and easy way of starting a hangout (and also pinging the people you want to join).</p>
+    <p class="stacks-copy">This is a feature we have on Bonfire (our internal chat system) that I missed a lot on Slack.</p>
+</section>
+
+<section class="stacks-section">
+    {% header h2 | Starting a hangout %}
+    <p class="stacks-copy">You can decide to either ping somebody or to generate a link that people can join. There's no real difference between these, except that the first one is going to ping people.</p>
+    <p class="stacks-copy">In order to use this feature, you need to configure the hangout url format. You could do something like <span class="ff-mono">https://g.co/hangouts/$name$</span></p>
+    {% header h3 | User-based hangout %}
+    <ul class="stacks-copy">
+        <li>Send a message with this content: <span class="ff-mono">hangout @somebody</span> (where @somebody is who you want to hang with).</li>
+        <li>Your message will be sent as <span class="ff-mono">hangout @somebody: https://g.co/hangouts/yourUsername-somebody</span>.</li>
+    </ul>
+    {% header h3 | Generic hangout %}
+    <ul class="stacks-copy">
+        <li>Send a message with this content: <span class="ff-mono">hangout hang name</span>.</li>
+        <li>Your message will be sent as <span class="ff-mono">hangout hang name: https://g.co/hangouts/hang-name</span></li>
+    </ul>
+    <img src="/assets/images/hangout.gif" />
+</section>
