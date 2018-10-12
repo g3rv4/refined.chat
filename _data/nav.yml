@@ -26,6 +26,8 @@
           url: hangout-links
         - title: Unread count
           url: unread-count
+        - title: Unread count (favicon)
+          url: unread-count-favicon
         - title: Reply to channel
           url: reply-to-channel
         - title: Disable previews
