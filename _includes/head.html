@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="Taut - a tool for Slack" />
+  <meta property="og:title" content="{% if page.url != '/' %}{{ page.title }} | Taut{% else %}Taut - a tool for Slack{% endif %}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}assets/images/card.png" />
