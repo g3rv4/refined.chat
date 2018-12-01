@@ -36,6 +36,8 @@
           url: styling-updates
         - title: Move the sidebar
           url: move-sidebar
+        - title: Show channel details
+          url: show-channel-details
     - title: Security
       subsublinks:
         - title: Is this extension secure?
