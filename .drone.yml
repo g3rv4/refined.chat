@@ -19,4 +19,4 @@ pipeline:
 
     secrets: [cloudflare_zone, cloudflare_email, cloudflare_key]
     volumes:
-      - /home/gervasio/docker/nginx/volumes/html/taut.rocks:/var/site-destination
+      - /home/gervasio/docker/nginx/volumes/html/refined.chat:/var/site-destination

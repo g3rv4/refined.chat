@@ -1,6 +1,6 @@
 # Build settings
 markdown: kramdown
-url: https://taut.rocks
+url: https://refined.chat
 baseurl: /
 kramdown:
     smart_quotes: ["apos", "apos", "quot", "quot"]

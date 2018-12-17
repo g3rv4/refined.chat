@@ -1,20 +1,20 @@
 # URLs below should be exactly the same as real paths. Just follow examples…
-- title: Taut
+- title: Refined
   url: /
   sublinks:
     - title: Download
       subsublinks:
         - title: Chrome
-          url: https://chrome.google.com/webstore/detail/taut-a-tool-for-slack/mgicdolhkaeefgmbhlohfjoafacijbfh
+          url: https://chrome.google.com/webstore/detail/refined-a-tool-for-slack/mgicdolhkaeefgmbhlohfjoafacijbfh
           external: true
         - title: Firefox
-          url: https://addons.mozilla.org/en-US/firefox/addon/taut-a-tool-for-slack/
+          url: https://addons.mozilla.org/en-US/firefox/addon/refined-a-tool-for-slack/
           external: true
         - title: Opera
           url: https://addons.opera.com/en/extensions/details/taut-a-tool-for-slack/
           external: true
         - title: Source Code
-          url: https://github.com/g3rv4/Taut
+          url: https://github.com/g3rv4/Refined
           external: true
     - title: Features
       subsublinks:
