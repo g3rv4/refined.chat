@@ -38,8 +38,10 @@
           url: move-sidebar
         - title: Show channel details
           url: show-channel-details
-    - title: Security
+    - title: Moar Stuff
       subsublinks:
+        - title: What happened with the name?
+          url: naming
         - title: Is this extension secure?
           url: security
     - title: Get in touch
