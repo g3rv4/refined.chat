@@ -67,7 +67,9 @@ module Jekyll
           Process.fork do
             begin
               uri = URI(a.get_attribute('href'))
-              unless config['check_exclude'].include?(uri.host)
+              exclude_by_host = config['check_exclude'] and config['check_exclude'].include?(uri.host)
+              exclude_by_url = config['check_exclude_exact'] and config['check_exclude_exact'].include?(uri)
+              unless exclude_by_host or exclude_by_url
                 # verify that the link is good
                 r = Net::HTTP.get_response(uri)
 

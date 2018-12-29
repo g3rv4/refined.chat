@@ -10,5 +10,6 @@ extlinks:
   check_links: false #local
 #prod:  check_links: true
   rel_exclude: ['g3rv4.com']
+  check_exclude_exact: ['https://github.com/g3rv4/refined.chat/issues/new']
 
 exclude: ["assets/less"]
