@@ -40,10 +40,12 @@
           url: show-channel-details
     - title: Moar Stuff
       subsublinks:
-        - title: What happened with the name?
-          url: naming
         - title: Is this extension secure?
           url: security
+        - title: What happened with the name?
+          url: naming
+        - title: Can I see a demo?
+          url: demo
     - title: Get in touch
       subsublinks:
         - title: Contribute!
