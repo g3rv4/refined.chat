@@ -91,11 +91,15 @@
 
                 // Add the list item
                 $("<li class='grid--cell fd-column stacks-nav--item' />").appendTo(stack[0]).append(
-                    $("<a class='d-block s-link s-link__muted fs-body1' />").text(elem.text()).attr("href", "#" + elem.attr("id"))
+                    $("<a class='d-block s-link s-link__muted fs-body1' />").text(elem.text()).attr("href", elem.data("href") || "#" + elem.attr("id"))
                 );
 
                 currentLevel = level;
             });
+
+            if($(".js-secondary-nav li").length) {
+                $(".js-secondary-nav-container").removeClass("d-none");
+            }
         });
     }, old = $.fn.toc;
 

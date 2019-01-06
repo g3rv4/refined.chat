@@ -9,14 +9,14 @@
                         <ul id="nav" class="list-reset">
                         {% for entry in item.sublinks %}
                             <li class="mb16">
-                                <div class="px16 py6 fw-bold tt-uppercase fs-fine mt16">
+                                <div class="px16 py6 fw-bold tt-uppercase fs-fine mt16 fc-red-500">
                                     {{ entry.title }}
                                 </div>
                                 {% if entry.subsublinks[0] %}
                                     <ul class="list-reset">
                                         {% for subentry in entry.subsublinks %}
-                                            {% assign pageURL = page.url | remove_first:"/" | remove: ".html" %}
-                                            <li><a class="d-block py6 px16 s-link s-link__muted w100 {% if pageURL == subentry.url %}bg-red-400 fc-white{% endif %}" href="{{ subentry.url }}" {% if subentry.external %}target="_blank" rel="nofollow"{% endif %}>{{ subentry.title }}</a></li>
+                                            {% assign pageURL = page.url | remove: ".html" %}
+                                            <li><a class="d-block py6 px16 s-link s-link__muted w100 {% if pageURL == subentry.url or (page.id contains '/blog' and subentry.url contains '/blog') %}bg-red-400 fc-white{% endif %}" href="{{ subentry.url }}" {% if subentry.external %}target="_blank" rel="nofollow"{% endif %}>{{ subentry.title }}</a></li>
                                         {% endfor %}
                                     </ul>
                                 {% endif %}

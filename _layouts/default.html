@@ -10,22 +10,26 @@
 
         <div class="grid--cell w90 md:w100">
             <div id="content" class="grid jc-space-between ps-relative t64 py24 pl48 pr16 md:pl24 sm:pl16 sm:pr16">
-                <div class="grid--cell order-last w20 wmx2 pl24 sm:d-none">
+                <div class="grid--cell order-last w20 wmx2 pl24 sm:d-none js-secondary-nav-container d-none">
                     <aside class="ps-sticky t64 pt16">
-                        <h5 class="mb4 fw-bold tt-uppercase fs-fine fc-red-500 mnl1">Sections</h5>
+                        <h5 class="mb4 fw-bold tt-uppercase fs-fine fc-red-500 mnl1">{% if page.title == 'Refined Blog' %}Articles{% else %}Sections{% endif %}</h5>
                         <ul class="list-reset grid gs8 gsy fd-column stacks-nav__secondary js-secondary-nav"></ul>
                     </aside>
                 </div>
                 <div class="grid--cell w80 wmx8 sm:w100">
                     {% if page.title %}
-                        <h1 class="stacks-h1">{{ page.title }}</h1>
+                        <h1 class="stacks-h1 fc-red-500">{{ page.title }}</h1>
                     {% endif %}
                     {% if page.description %}
                         <p class="stacks-copy stacks-copy__lg">
                             {{ page.description }}
                         </p>
                     {% endif %}
-                    {{ content | extlinks:page }}
+                    {% if page.collection == 'posts' %}
+                        {{ content | remove_first:page.excerpt | extlinks:page | fixstyles }}
+                    {% else %}
+                        {{ content | remove_first:page.excerpt | extlinks:page }}
+                    {% endif %}
                 </div>
             </div>
         </div>

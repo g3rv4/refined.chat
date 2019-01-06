@@ -1,0 +1,12 @@
+---
+layout: default
+title: Refined Blog
+description: Because a blog for an extension is always a good idea (?)
+---
+
+{% for post in site.posts %}
+<section class="stacks-section">
+  {% header h2 | {{ post.title }} | {{ post.url }} %}
+  <p class="stacks-copy">{{ post.excerpt | strip_html }}</p>
+</section>
+{% endfor %}
