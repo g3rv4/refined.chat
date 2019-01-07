@@ -1,13 +1,12 @@
 ---
 layout: default
-title: "Hello World"
+title: "Extension principles"
 date: "2019-01-05 21:16:00 -0300"
-description: "This is the first post on the blog. Trying to answer one question: why?"
-card_title: "Hello World"
-card_content: "Check out the first post on Refined's blog! Why would an extension need one? Click here and see it for yourself."
+description: "On the first post on its blog, talk a bit about the guiding principles used on all-things Refined"
+card_content: "Check out the first post on Refined's blog! Why would an extension need one? To make promises. Obviously."
 ---
 
-Why would an extension have its own blog? On this quick article I try to explain it. TL;DR: I wanted a place to write about the extension and my personal blog didn't feel like the right place to do it.
+Why would an extension have its own blog? To make promises. And hopefully, earn some contributors :) Also: I wanted a place to write about the extension and my personal blog didn't feel like the right place to do it.
 
 <!--more-->
 I want to write a bit about my motivation to build the extension and its features. Also about write how you'd write a plugin if you wanted to contribute to the project (or if you wanted to just write your plugins for yourself).
