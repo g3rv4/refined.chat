@@ -3,6 +3,8 @@ layout: default
 title: "Hello World"
 date: "2019-01-05 21:16:00 -0300"
 description: "This is the first post on the blog. Trying to answer one question: why?"
+card_title: "Hello World"
+card_content: "Check out the first post on Refined's blog! Why would an extension need one? Click here and see it for yourself."
 ---
 
 Why would an extension have its own blog? On this quick article I try to explain it. TL;DR: I wanted a place to write about the extension and my personal blog didn't feel like the right place to do it.
