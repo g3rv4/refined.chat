@@ -28,6 +28,8 @@
           url: /naming
     - title: Features
       subsublinks:
+        - title: Smart Threads
+          url: /smart-threads
         - title: Mute users
           url: /mute-users
         - title: Markdown links
@@ -38,8 +40,6 @@
           url: /unread-count
         - title: Unread count (favicon)
           url: /unread-count-favicon
-        - title: Broadcast all thread messages
-          url: /broadcast-thread
         - title: Reply to channel
           url: /reply-to-channel
         - title: Disable previews

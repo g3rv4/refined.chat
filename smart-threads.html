@@ -1,0 +1,52 @@
+---
+layout: default
+title: Smart Threads
+description: Because so many things get hidden inside threads
+card_content: "Slack threads hide conversations, this feature frees them up. Have all the threads on the main channel and see what's going on."
+---
+<section class="stacks-section">
+    {% header h2 | What problem does this solve? %}
+    <p class="stacks-copy">Siloed conversations. When people talk in threads, only those who have interacted with the
+        conversation get a notification... and the rest of the team either click on the conversation link or totally
+        miss it.</p>
+    <p class="stacks-copy">When people talk on a thread I haven't interacted with (and especially if the original
+        message is outside the main window) I can't really tell that a conversation is happening at all. This plugin
+        makes it as if all the people talking on your current channel chose to send their threaded messages to the
+        channel.</p>
+    <p class="stacks-copy">This is particularly important in teams that work across timezones. When I start my day, I
+        want to go back in time and see what people talked about. If they do so in threads, I need to either click and
+        read those messages on the 2nd pane (and that's if they didn't talk in a thread that's older... I have no way of
+        seeing that conversation).</p>
+</section>
+
+<section class="stacks-section">
+    {% header h2 | How does it solve it? %}
+    <p class="stacks-copy">By treating all the thread messages as if they were broadcasted (that is: as if the author
+        had decided to send it to the channel). To make it less noisy, it removes some elements included on broadcasted
+        messages.</p>
+    <p class="stacks-copy">To quickly identify related messages, when you hover over a threaded message, all the related
+        messages are highlighted... so that you don't <i>need</i> to expand the thread to see what people are talking
+        about.</p>
+</section>
+
+<section class="stacks-section">
+        {% header h2 | How does it look? %}
+        <p class="stacks-copy">Here's a gif showing it... check out how the messages in the same conversation get highlighted as the mouse moves.</p>
+        <img src="/assets/images/smartThreads.gif" />
+    </section>
+
+<section class="stacks-section">
+    {% header h2 | How does it affect your Slack experience? %}
+    <ul>
+        <li class="stacks-copy">All the messages people send to a thread appear on the main channel.</li>
+        <li class="stacks-copy">You won't be able to tell when somebody chooses to broadcast a message to the channel.
+            Broadcasted messages look exactly the same as non-broadcasted messages for you.</li>
+    </ul>
+</section>
+
+<section class="stacks-section">
+    {% header h2 | How does it affect other people's Slack experience? %}
+    <p class="stacks-copy">Nothing changes for them. They see threaded messages hidden behind the threads, and only
+        those where the author chooses to broadcast in the channel. They won't see your messages on the main channel
+        unless you choose to broadcast them.</p>
+</section>
