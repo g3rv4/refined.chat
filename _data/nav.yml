@@ -11,7 +11,7 @@
           url: https://addons.mozilla.org/en-US/firefox/addon/refined-a-tool-for-slack/
           external: true
         - title: Opera
-          url: https://addons.opera.com/en/extensions/details/taut-a-tool-for-slack/
+          url: /opera
           external: true
         - title: Source Code
           url: https://github.com/g3rv4/Refined
