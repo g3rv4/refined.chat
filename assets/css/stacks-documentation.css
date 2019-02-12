@@ -10138,6 +10138,10 @@ pre.lineno {
     display: none !important;
   }
 }
-.stacks-section img {
+.stacks-section img,
+.stacks-copy img {
   max-width: 100%;
+}
+#content li {
+  font-size: 1.30769231rem;
 }
