@@ -24,8 +24,6 @@
           url: /blog
         - title: Is this extension secure?
           url: /security
-        - title: What happened with the name?
-          url: /naming
     - title: Features
       subsublinks:
         - title: Smart Threads

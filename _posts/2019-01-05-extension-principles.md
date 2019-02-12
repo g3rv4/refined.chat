@@ -23,7 +23,7 @@ No matter what. The only cookie it's setting on your browser is the one set by C
 
 Does it mean I don't care about how people are using the extension? nope, I care a big deal about it. But I'd rather you told me that instead of watching over your shoulder.
 
-This also means I'm going to experiment what features to kill. I'm at a point where I'm considering killing [Reply to channel](/reply-to-channel) now that I can have [all the thread messages broadcasted](/broadcast-thread).
+This also means I'm going to experiment what features to kill. I'm at a point where I'm considering killing [Reply to channel](/reply-to-channel) now that we have [Smart Threads](/smart-threads).
 
 I don't know if people use reply to channel... I now think it's a bit impolite with people that want to use Slack with threads.
 
