@@ -26,8 +26,8 @@
           url: /security
     - title: Features
       subsublinks:
-        - title: Smart Threads
-          url: /smart-threads
+        - title: Visible Threads
+          url: /visible-threads
         - title: Mute users
           url: /mute-users
         - title: Markdown links

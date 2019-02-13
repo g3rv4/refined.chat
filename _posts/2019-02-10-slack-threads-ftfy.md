@@ -3,7 +3,7 @@ layout: default
 title: "Slack Threads: FTFY"
 date: "2019-02-10 20:16:00 -0300"
 description: "Slack threads are great. Especially if you want siloed conversations."
-card_content: "Have you ever missed a conversation on Slack because it was on a thread? Refined's Smart Threads can prevent that from happening again."
+card_content: "Slack Threads are broken. As in: you never know what's going on broken. Check how you can fix that with this browser extension."
 ---
 
 Especially in a team with members on different timezones, keeping up to date with conversations that happen in threads is really hard. You have to scroll up, click on the conversation links and read them on that 2nd pane. And if people reply to a really old message... good luck finding that out!
@@ -25,6 +25,8 @@ Slack adds a convenient indicator of how many messages unread you have (and a re
 
 But this also happens as you go through your day... I'm not 100% of my time checking Slack, but let's assume I am. I'm only watching the conversation on the team, so I'm up to date... right? **no**! If somebody chooses to start a thread on an old message, I CAN'T TELL! So I end up missing a conversation that may have been interesting.
 
+Oh, but if people talk on a conversation you're subscribed to (because you've talked on it, reacted to one of those messages or somebody mentioned it) you're notified. Great, so I guess an alternative is to react to every message every time, so that if at some point somebody forks a conversation from it, you're notified.
+
 {% header h2 | Is there a better way? %}
 
 In my opinion, the way our Stack Overflow chat works is ideal... people reply to messages and they all appear on the main channel. When you hover a message that's a reply, the message it's being replied to is highlighted.
@@ -33,12 +35,10 @@ Everyone is in the loop of every conversation. Could this be too noisy? It depen
 
 {% header h2 | Can you do that on Slack? %}
 
-Well, unfortunately... not if you use it as is. But... with Refined you can enable [Smart Threads](/smart-threads) on Slack. Smart Threads do exactly that: they broadcast every message to the main channel and have the hover logic so that all the messages in the thread are highlighted.
-
-Broadcasted threaded messages are... a bit too noisy for me, so I removed a couple elements from them as well.
+Well, unfortunately... not if you use it as is. But... with Refined you can enable [Visible Threads](/visible-threads) on Slack. Visible Threads make... thread messages visible :) by broadcasting every message to the main channel and adding the hover logic so that all the messages in the thread are highlighted.
 
 Here you can see how it looks:
-![](/assets/images/smartThreads.gif)
+![](/assets/images/visibleThreads.gif)
 
 {% header h2 | Alright, I'd like to try it out! %}
 
