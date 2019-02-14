@@ -11,9 +11,9 @@ Especially in a team with members on different timezones, keeping up to date wit
 <!--more-->
 Our team moved from our own chat (aka bonfire, [the one used in public Stack Overflow](https://chat.stackoverflow.com/)) to Slack and that didn't make me happy. There were a bunch of things I missed (that's why [I originally built BetterSlack](https://g3rv4.com/2018/08/betterslack), now Refined).
 
-My main complaint with Slack is: it favors private conversations. DMs are the clear example of that... but it doesn't stop just there. You also have private channels. And people can create public channels to discuss stuff, but if you don't know they exist, you're not aware of people discussing things you could be interested on. These features favor private conversations and there's nothing I can do with them... since they're features of Slack.
+My main complaint with Slack is: it favors private conversations. DMs are the clear example of that... but it doesn't stop just there. You also have private channels. And people can create public channels to discuss stuff, but if you don't know they exist, you're not aware of people discussing things you could be interested in. These features favor private conversations and there's nothing I can do with them... since they're features of Slack.
 
-But assuming you're on a channel and all your team members are there... where most of the conversations you're insterested on happen, there's still one way siloed conversations still take place: threads.
+But assuming you're on a channel and all your team members are there... where most of the conversations you're interested in happen, there's still one way siloed conversations take place: threads.
 
 {% header h2 | What is wrong with threads? %}
 
