@@ -2,20 +2,6 @@
 - title: Refined
   url: /
   sublinks:
-    - title: Download
-      subsublinks:
-        - title: Chrome
-          url: https://chrome.google.com/webstore/detail/refined-a-tool-for-slack/mgicdolhkaeefgmbhlohfjoafacijbfh
-          external: true
-        - title: Firefox
-          url: https://addons.mozilla.org/en-US/firefox/addon/refined-a-tool-for-slack/
-          external: true
-        - title: Opera
-          url: /opera
-          external: true
-        - title: Source Code
-          url: https://github.com/g3rv4/Refined
-          external: true
     - title: Refined
       subsublinks:
         - title: Demo
