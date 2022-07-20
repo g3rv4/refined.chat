@@ -2,7 +2,7 @@ _data/cards.json
 jekyll
 jekyll.rb
 run.rb
-version.json
+data/version.json
 .sass-cache/
 *.sh
 
