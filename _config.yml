@@ -1,6 +1,6 @@
 # Build settings
 markdown: kramdown
-url: https://refined.chat
+url: https://refined.gervas.io
 baseurl: /
 kramdown:
     smart_quotes: ["apos", "apos", "quot", "quot"]

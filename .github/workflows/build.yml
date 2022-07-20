@@ -1,0 +1,35 @@
+name: build
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0 # get entire git tree, required for nerdbank gitversioning
+    - uses: Azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: Azure/get-keyvault-secrets@v1.1
+      with:
+        keyvault: "ActionsBuild"
+        secrets: 'OctopusServerUrl, OctopusApiKey, NuGetEndpoint'
+      id: azureSecrets
+    - name: Add NuGet source
+      shell: pwsh
+      run: |
+        nuget sources Add -Name MySource -Source ${{ steps.azureSecrets.outputs.NuGetEndpoint }}
+        Register-PSRepository -Name MySource -SourceLocation ${{ steps.azureSecrets.outputs.NuGetEndpoint }} -InstallationPolicy Trusted
+        Install-Module BuildScripts -Repository MySource
+    - name: Build project
+      shell: pwsh
+      run: ./build.ps1
+    - name: Push it to GitHub
+      run: curl -X PUT -u "$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}" -F package=@_packages/refined.chat.$VERSION.nupkg https://nuget.pkg.github.com/g3rv4/
+    - name: Create and deploy an Octopus release
+      run: |
+        dotnet tool install --global Octopus.DotNet.Cli
+        dotnet-octo create-release --project refined.chat --releaseNumber $VERSION --deployto Dev --server "${{ steps.azureSecrets.outputs.OctopusServerUrl }}" --apiKey "${{ steps.azureSecrets.outputs.OctopusApiKey }}" --progress

@@ -1,4 +1,4 @@
-# This repository contains the code of refined.chat (the website)
+# This repository contains the code of refined.gervas.io (the website)
 
 Are you sure you want to report an issue with the site? if you want to report a problem with the extension, please do so on the [g3rv4/Refined](https://github.com/g3rv4/Refined) repository (where the code for the extension lives).
 
